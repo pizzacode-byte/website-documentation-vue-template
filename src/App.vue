@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <dropdown-navbar></dropdown-navbar>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import dropdownNavbar from './components/navbars/dropdown-navbar.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    dropdownNavbar
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 </style>
